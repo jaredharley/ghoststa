@@ -1,21 +1,21 @@
 $(function() {
-  // Ghosthunter configuration
-  $('#search-field').ghostHunter({
-    results: '#search-results',
-    before: function() {
-      $('#search-results-container').modal('show');
-      $('#search-term').html($('#search-field').val());
-    },
-    onComplete: function() {
-      $('#loading-spinner').hide();
-    },
-    result_template: "<p><h3><a href='{{link}}'>{{title}}</a> <small>{{pubDate}}</small></h3><small>{{description}}</small></p><hr>",
-    info_template: "<div class='text-right'><small>{{amount}} posts found</small></div>"
-  });
-  $('#search-results-container').on('hidden.bs.modal', function() {
-    $('#loading-spinner').show();
-    $('#search-field').focus();
-  });
+//  // Ghosthunter configuration
+//  $('#search-field').ghostHunter({
+//    results: '#search-results',
+//    before: function() {
+//      $('#search-results-container').modal('show');
+//      $('#search-term').html($('#search-field').val());
+//    },
+//    onComplete: function() {
+//      $('#loading-spinner').hide();
+//    },
+//    result_template: "<p><h3><a href='{{link}}'>{{title}}</a> <small>{{pubDate}}</small></h3><small>{{description}}</small></p><hr>",
+//    info_template: "<div class='text-right'><small>{{amount}} posts found</small></div>"
+//  });
+//  $('#search-results-container').on('hidden.bs.modal', function() {
+//    $('#loading-spinner').show();
+//    $('#search-field').focus();
+//  });
 
 
   // Helper function to get url segments
